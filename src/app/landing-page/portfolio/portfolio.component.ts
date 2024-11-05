@@ -13,8 +13,8 @@ import { TranslateModule } from '@ngx-translate/core';
 export class PortfolioComponent {
 
   projects = [
-    { backgroundImage: './../../../assets/img/el-pollo-loco.png', title: 'El pollo loco', description: "EL_POLLO_LOCO", github: '', live_test: 'https://offermanns.online/el-pollo-loco', languages: 'JavaScript | HTML | CSS' },
-    { backgroundImage: './../../../assets/img/join.png', title: 'Join', description: "JOIN", github: '', live_test: 'https://offermanns.online/join', languages: 'JavaScript | HTML | CSS | Firebase ' }
+    { backgroundImage: './../../../assets/img/el-pollo-loco.png', title: 'El pollo loco', description: "EL_POLLO_LOCO", github: 'https://github.com/Pao040883/el-pollo-loco', live_test: 'https://offermanns.online/el-pollo-loco', languages: 'JavaScript | HTML | CSS' },
+    { backgroundImage: './../../../assets/img/join.png', title: 'Join', description: "JOIN", github: 'https://github.com/Pao040883/join-kanban', live_test: 'https://offermanns.online/join', languages: 'JavaScript | HTML | CSS | Firebase ' }
   ];
 
   isHidden: boolean[] = [];

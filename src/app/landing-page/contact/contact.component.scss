@@ -6,6 +6,8 @@
     gap: 32px;
     width: 100%;
     color: #fff;
+    background:
+    url(./../../../assets/img/purple_shadow_contact.png) no-repeat right center/1000px 550px;
 
     .header {
         display: flex;
@@ -316,8 +318,11 @@ button {
   }
   
   .modal-content {
+    position: absolute;
     background-color: #fff;
-    margin: 15% auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px;
     border: 1px solid #888;
     width: 80%;

@@ -36,7 +36,7 @@ export class ContactComponent {
   constructor(public languageService: LanguageService) {
   }
 
-  mailTest = true;
+  mailTest = false;
   showModal = false;
 
   post = {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ɵɵdeferOnViewport } from '@angular/core';
 import { HeroComponent } from './hero/hero.component';
 import { TranslateService } from '@ngx-translate/core';
 import { AboutComponent } from './about/about.component';
