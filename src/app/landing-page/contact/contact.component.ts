@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, QueryList, ViewChildren } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LanguageService } from '../../../shared/services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
@@ -22,7 +22,8 @@ export class SafeHtmlPipe implements PipeTransform {
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements AfterViewInit {
+  @ViewChildren('scrollAnimated') animatedElements!: QueryList<ElementRef>;
 
   http = inject(HttpClient);
 
@@ -88,6 +89,22 @@ export class ContactComponent {
 
   closeModal() {
     this.showModal = false;
+  }
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.add('visible');
+        } else {
+          (entry.target as HTMLElement).classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.1 }); // Optionaler Threshold für präziseres Verhalten
+
+    this.animatedElements.forEach(element => {
+      observer.observe(element.nativeElement);
+    });
   }
 
 }

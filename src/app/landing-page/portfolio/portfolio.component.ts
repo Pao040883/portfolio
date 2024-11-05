@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../../../shared/services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
@@ -10,7 +10,8 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements AfterViewInit {
+  @ViewChildren('scrollAnimated') animatedElements!: QueryList<ElementRef>;
 
   projects = [
     { backgroundImage: './../../../assets/img/el-pollo-loco.png', title: 'El pollo loco', description: "EL_POLLO_LOCO", github: 'https://github.com/Pao040883/el-pollo-loco', live_test: 'https://offermanns.online/el-pollo-loco', languages: 'JavaScript | HTML | CSS' },
@@ -29,6 +30,22 @@ export class PortfolioComponent {
 
   hideOverlay(index: number) {
     this.isHidden[index] = false;
+  }
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.add('visible');
+        } else {
+          (entry.target as HTMLElement).classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.1 }); // Optionaler Threshold für präziseres Verhalten
+
+    this.animatedElements.forEach(element => {
+      observer.observe(element.nativeElement);
+    });
   }
 
 }

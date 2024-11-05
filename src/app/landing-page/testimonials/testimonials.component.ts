@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { LanguageService } from '../../../shared/services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -9,7 +9,8 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.scss'
 })
-export class TestimonialsComponent {
+export class TestimonialsComponent implements AfterViewInit {
+  @ViewChildren('scrollAnimated') animatedElements!: QueryList<ElementRef>;
   currentIndex: number = 0;
   intervalId: any;
 
@@ -66,6 +67,22 @@ export class TestimonialsComponent {
 
   isActive(index: number): boolean {
     return index === this.currentIndex;
+  }
+
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.add('visible');
+        } else {
+          (entry.target as HTMLElement).classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.1 }); // Optionaler Threshold für präziseres Verhalten
+
+    this.animatedElements.forEach(element => {
+      observer.observe(element.nativeElement);
+    });
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../../shared/services/language.service';
 import { ViewportScroller } from '@angular/common';
@@ -10,7 +10,8 @@ import { ViewportScroller } from '@angular/common';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
-export class SkillsComponent {
+export class SkillsComponent implements AfterViewInit {
+  @ViewChildren('scrollAnimated') animatedElements!: QueryList<ElementRef>;
 
   constructor(private viewportScroller: ViewportScroller, private languageService: LanguageService) {}
 
@@ -65,4 +66,19 @@ export class SkillsComponent {
     }
   ];
   
+  ngAfterViewInit() {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          (entry.target as HTMLElement).classList.add('visible');
+        } else {
+          (entry.target as HTMLElement).classList.remove('visible');
+        }
+      });
+    }, { threshold: 0.1 }); // Optionaler Threshold für präziseres Verhalten
+
+    this.animatedElements.forEach(element => {
+      observer.observe(element.nativeElement);
+    });
+  }
 }
