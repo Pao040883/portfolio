@@ -1,0 +1,133 @@
+{
+  "HEADER": {
+    "ABOUTME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Kontakt"
+  },
+  "HERO": {
+    "IAM": "Ich bin",
+    "NAME": "Patrick Offermanns",
+    "TITLE": "Frontend-Entwickler",
+    "LETS_TALK": "Lass uns reden",
+    "SCROLL_DOWN": "Nach unten scrollen"
+  },
+  "ABOUT_ME": {
+    "TITLE": "Über mich",
+    "TEXT": "Hallo! Ich bin Patrick, ein Frontend-Entwickler mit einer Leidenschaft für die Gestaltung benutzerfreundlicher digitaler Erlebnisse. Mit einem Talent für Problemlösungen und einem Auge für Details spezialisiere ich mich darauf, komplexe Ideen in elegante Designs zu übersetzen.",
+    "CONNECT": "Lass uns verbinden und gemeinsam etwas Großartiges schaffen!",
+    "FLEXIBLE": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in München als auch remote effektiv arbeiten.",
+    "OPEN": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
+    "PROFESSION": "In meinem Beruf geht es beim Programmieren nicht nur darum, Code zu schreiben; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, meine Fähigkeit zu nutzen, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+  },
+  "SKILLS": {
+    "TITLE": "Fähigkeiten",
+    "TEXT": "Meine Reise hat mich an verschiedene Projekte geführt, bei denen ich eine Reihe von Frontend-Technologien und Konzepten eingesetzt habe. Ich bin offen dafür, neue Technologien und Methoden zu nutzen, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Welt der Webentwicklung am Ball zu bleiben.",
+    "LOOKING": "Auf der Suche nach",
+    "ANOTHER_SKILL": "einer weiteren Fähigkeit",
+    "CONTACT": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+    "GET_IN_TOUCH": "Kontakt aufnehmen"
+  },
+  "PORTFOLIO": {
+    "TEXT": "Entdecke hier eine Auswahl meiner Arbeit – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "EL_POLLO_LOCO": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Soße zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu."
+  },
+  "TESTIMONIALS": {
+    "SCHUSTER": "Michael hat das Team wirklich durch seine großartige Organisation und klare Kommunikation zusammengehalten. Ohne sein Engagement wären wir nicht so weit gekommen.",
+    "EICHINGER": "Michi war ein hervorragender Kollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+    "NUBER": "Es war eine große Freude, mit Michael zusammenzuarbeiten. Er versteht es, Teammitglieder zu motivieren und zu ermutigen, die bestmögliche Arbeit zu leisten und bringt immer neue Ideen ins Brainstorming ein. Was das Wohlbefinden der Gruppenmitglieder angeht, war er immer präsent und bereit zuzuhören und anderen zu helfen, und das mit einem tollen Sinn für Humor."
+  },
+  "CONTACT": {
+    "HEADER": "Kontakt",
+    "SUBHEADER": "Haben Sie ein Problem zu lösen?",
+    "TEXT1": "Kontaktieren Sie mich über dieses Formular. Ich bin interessiert daran, von Ihnen zu hören, Ihre Ideen zu erfahren und durch meine Arbeit zu Ihren Projekten beizutragen.",
+    "TEXT2": "Sie brauchen einen Frontend-Entwickler? <b>Kontaktieren Sie mich!<b>",
+    "P-NAME": "Dein Name",
+    "P-EMAIL": "Deine Email",
+    "P-MESSAGE": "Deine Nachricht",
+    "P-TERMS": "Ich habe die <a href='/privacypolicy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten, wie darin beschrieben, zu.",
+    "E-NAME": "Dein Name ist erforderlich",
+    "E-EMAIL": "Deine Email ist erforderlich",
+    "E-MESSAGE": "Deine Nachricht ist erforderlich",
+    "E-TERMS": "Bitte akzeptiere die Datenschutzerklärung",
+    "BUTTON": "Sende Nachricht :)",
+    "SEND-TITLE": "Erfolgreich gesendet!",
+    "SEND-MESSAGE": "Vielen Dank für deine Nachricht. Ich werde mich bald bei dir melden."
+  },
+  "LEGALNOTICE": {
+    "TEXT": "Impressum"
+  },
+  "PRIVACY_POLICY": {
+    "TITLE": "Datenschutzerklärung",
+    "INTRO": "Wir freuen uns sehr über Ihr Interesse an unserer Website. Der Schutz Ihrer persönlichen Daten ist für uns ein besonderes Anliegen. Nachfolgend informieren wir Sie umfassend über den Umgang mit Ihren Daten.",
+    "RESPONSIBLE": {
+      "TITLE": "Verantwortliche Stelle",
+      "CONTENT": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:"
+    },
+    "RESPONSIBLE_PERSON": {
+      "NAME": "Patrick Offermanns",
+      "ADDRESS": "Ohechaussee 52b, 22848 Norderstedt",
+      "PHONE": "Telefon: +49 (0) 152 33 64 66 14",
+      "EMAIL": "E-Mail: patrick@offermanns.online"
+    },
+    "DATA_COLLECTION": {
+      "TITLE": "Erhebung und Speicherung personenbezogener Daten",
+      "CONTENT": "Wir erheben und speichern nur die Daten, die Sie uns freiwillig zur Verfügung stellen, z. B. durch das Ausfüllen des Kontaktformulars oder das Senden einer E-Mail. Zu den von uns erfassten Daten können Ihr Name, Ihre E-Mail-Adresse und Ihre Nachricht gehören."
+    },
+    "PROCESSING_PURPOSE": {
+      "TITLE": "Zweck der Datenverarbeitung",
+      "CONTENT": "Die Erhebung der Daten erfolgt, um mit Ihnen in Kontakt zu treten und Ihre Anfragen zu bearbeiten. Die von Ihnen zur Verfügung gestellten Daten werden ausschließlich für diese Zwecke verwendet und nicht ohne Ihre Zustimmung an Dritte weitergegeben."
+    },
+    "LEGAL_BASIS": {
+      "TITLE": "Rechtsgrundlage der Verarbeitung",
+      "CONTENT": "Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) oder Art. 6 Abs. 1 lit. b DSGVO (Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen)."
+    },
+    "DATA_SHARING": {
+      "TITLE": "Weitergabe von Daten an Dritte",
+      "CONTENT": "Wir geben Ihre persönlichen Daten nur dann an Dritte weiter, wenn Sie ausdrücklich zugestimmt haben oder wenn dies zur Erfüllung eines Vertrags erforderlich ist."
+    },
+    "YOUR_RIGHTS": {
+      "TITLE": "Ihre Rechte",
+      "RIGHTS_LIST": [
+        "eine Bestätigung darüber zu verlangen, ob Ihre personenbezogenen Daten verarbeitet werden, sowie Auskunft über diese Daten zu erhalten (Art. 15 DSGVO);",
+        "die Berichtigung unrichtiger personenbezogener Daten oder die Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen (Art. 16 DSGVO);",
+        "die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen (Art. 17 DSGVO), sofern keine gesetzlichen Aufbewahrungsfristen entgegenstehen;",
+        "die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen (Art. 18 DSGVO);",
+        "Ihre personenbezogenen Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten (Art. 20 DSGVO);",
+        "Ihre Einwilligung jederzeit zu widerrufen (Art. 7 Abs. 3 DSGVO);",
+        "sich bei einer Aufsichtsbehörde zu beschweren (Art. 77 DSGVO)."
+      ]
+    },
+    "CONTACT": {
+      "TITLE": "Kontaktmöglichkeit",
+      "CONTENT": "Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten, für Auskünfte, Berichtigung, Sperrung oder Löschung von Daten sowie Widerruf erteilter Einwilligungen oder Widerspruch gegen eine bestimmte Datenverwendung wenden Sie sich bitte direkt an uns."
+    },
+    "POLICY_CHANGE": {
+      "TITLE": "Änderung der Datenschutzerklärung",
+      "CONTENT": "Wir behalten uns das Recht vor, diese Datenschutzerklärung jederzeit anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen unserer Dienstleistungen anzupassen. Die jeweils aktuelle Version ist auf dieser Website verfügbar."
+    }
+  },
+  "LEGAL_NOTICE": {
+    "TITLE": "Impressum",
+    "RESPONSIBLE": {
+      "TITLE": "Verantwortlich für den Inhalt gemäß § 5 TMG",
+      "NAME": "Patrick Offermanns",
+      "ADDRESS": "Ohechaussee 52b, 22848 Norderstedt",
+      "PHONE": "Telefon: +49 (0) 152 33 64 66 14",
+      "EMAIL": "E-Mail: patrick@offermanns.online"
+    },
+    "DISCLAIMER": {
+      "TITLE": "Haftungsausschluss",
+      "CONTENT": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich."
+    },
+    "LINKS": {
+      "TITLE": "Haftung für Links",
+      "CONTENT": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+    },
+    "COPYRIGHT": {
+      "TITLE": "Urheberrecht",
+      "CONTENT": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+    }
+  }
+}

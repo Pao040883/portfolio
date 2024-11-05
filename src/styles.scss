@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #9747FF #141D2F;
+    background: #141D2F;
+    overflow-x: hidden;
+}
+
+a:-webkit-any-link {
+    text-decoration: inherit;
+}
+
+a:-webkit-any-link:hover {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #141D2F;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9747FF;
+    border-radius: 8px;
+}
+
+/* Scrollbalken beim Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #70E61C;
+}
+
+@keyframes moveUpAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {  }

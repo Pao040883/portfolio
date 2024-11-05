@@ -1,0 +1,40 @@
+<div class="skills-wrapper">
+    <section class="skills-container">
+        <div class="skill-header">
+            <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
+            <p>{{ 'SKILLS.TEXT' | translate }}</p>
+            <div class="skill-contact skill-contact-desktop">
+                <h3>{{ 'SKILLS.LOOKING' | translate }} <span>{{ 'SKILLS.ANOTHER_SKILL' | translate }}</span>?</h3>
+                <p>{{ 'SKILLS.CONTACT' | translate }}
+                </p>
+                <div class="contact-button">
+                    <button (click)="scrollToElement('contact')" href="javascript:void(0)" class="get-in-touch">
+                        {{ 'SKILLS.GET_IN_TOUCH' | translate }}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="skill-icons">
+            <div class="skill-elements">
+                <div class="skill-icons-element">
+                    @for (item of images; track $index) {
+                    <div class="element">
+                        <img src={{item.img}} alt="">
+                        {{item.title}}
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="skill-contact skill-contact-mobile">
+            <h3>{{ 'SKILLS.LOOKING' | translate }} <span>{{ 'SKILLS.ANOTHER_SKILL' | translate }}</span>?</h3>
+            <p>{{ 'SKILLS.CONTACT' | translate }}
+            </p>
+            <div class="contact-button">
+                <button (click)="scrollToElement('contact')" href="javascript:void(0)" class="get-in-touch">
+                    {{ 'SKILLS.GET_IN_TOUCH' | translate }}
+                </button>
+            </div>
+        </div>
+    </section>
+</div>

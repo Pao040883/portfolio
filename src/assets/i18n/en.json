@@ -1,0 +1,133 @@
+{
+  "HEADER": {
+    "ABOUTME": "About Me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "IAM": "I am",
+    "NAME": "Patrick Offermanns",
+    "TITLE": "Frontend Developer",
+    "LETS_TALK": "Let's Talk",
+    "SCROLL_DOWN": "Scroll Down"
+  },
+  "ABOUT_ME": {
+    "TITLE": "About me",
+    "TEXT": "Hey there! I'm Patrick, a frontend developer fueled by a passion for crafting user-friendly digital experiences. With a talent for problem-solving and an eye for detail, I specialize in translating complex ideas into elegant designs.",
+    "CONNECT": "Let's connect and create something amazing together!",
+    "FLEXIBLE": "Flexible in terms of working environments, I can work effectively both on-site in Munich and remotely.",
+    "OPEN": "I am open-minded and always looking for personal challenges to constantly improve my knowledge and skills.",
+    "PROFESSION": "In my profession, programming isn't just about writing code; it's a creative form of problem-solving. I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life."
+  },
+  "SKILLS": {
+    "TITLE": "Skills",
+    "TEXT": "My journey has involved working on diverse projects, employing a range of frontend technologies and concepts. I am open to embracing new technologies and methodologies to continuously enhance my skills and stay ahead in the ever-evolving landscape of web development.",
+    "LOOKING": "Looking for",
+    "ANOTHER_SKILL": "another skill",
+    "CONTACT": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "GET_IN_TOUCH": "Get in Touch"
+  },
+  "PORTFOLIO": {
+    "TEXT": "Explore a selection of my work here – Interact with projects to see my skills in action.",
+    "EL_POLLO_LOCO": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+  },
+  "TESTIMONIALS": {
+    "SCHUSTER": "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+    "EICHINGER": "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+    "NUBER": "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
+  },
+  "CONTACT": {
+    "HEADER": "Contact",
+    "SUBHEADER": "Got a problem to solve?",
+    "TEXT1": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "TEXT2": "Need a Frontend developer? <b>Contact me!<b>",
+    "P-NAME": "Your Name",
+    "P-EMAIL": "Your Email",
+    "P-MESSAGE": "Your Message",
+    "P-TERMS": "I have read the <a href='/datenschutzerklaerung' target='_blank'>Privacy Policy</a> and agree to the processing of my data as outline.",
+    "E-NAME": "Your name is required",
+    "E-EMAIL": "Your email is required",
+    "E-MESSAGE": "Your message is required",
+    "E-TERMS": "Please accept the privacy policy",
+    "BUTTON": "Send Message :)",
+    "SEND-TITLE": "Successfully sent!",
+    "SEND-MESSAGE": "Thank you for your message. I will get back to you soon."
+  },
+  "LEGALNOTICE": {
+    "TEXT": "Legal notice"
+  },
+  "PRIVACY_POLICY": {
+    "TITLE": "Privacy Policy",
+    "INTRO": "We are very pleased about your interest in our website. The protection of your personal data is a special concern for us. Below, we provide comprehensive information about the handling of your data.",
+    "RESPONSIBLE": {
+      "TITLE": "Responsible Party",
+      "CONTENT": "The party responsible for data processing on this website is:"
+    },
+    "RESPONSIBLE_PERSON": {
+      "NAME": "Patrick Offermanns",
+      "ADDRESS": "Ohechaussee 52b, 22848 Norderstedt",
+      "PHONE": "Telefon: +49 (0) 152 33 64 66 14",
+      "EMAIL": "E-Mail: patrick@offermanns.online"
+    },
+    "DATA_COLLECTION": {
+      "TITLE": "Collection and Storage of Personal Data",
+      "CONTENT": "We only collect and store data that you voluntarily provide to us, for example, by filling out the contact form or sending an email. The data we collect may include your name, email address, and message."
+    },
+    "PROCESSING_PURPOSE": {
+      "TITLE": "Purpose of Data Processing",
+      "CONTENT": "The data is collected to contact you and process your inquiries. The data you provide will be used solely for these purposes and will not be shared with third parties without your consent."
+    },
+    "LEGAL_BASIS": {
+      "TITLE": "Legal Basis for Processing",
+      "CONTENT": "Data processing is based on Art. 6 (1) lit. a GDPR (consent) or Art. 6 (1) lit. b GDPR (fulfillment of a contract or pre-contractual measures)."
+    },
+    "DATA_SHARING": {
+      "TITLE": "Sharing Data with Third Parties",
+      "CONTENT": "We only share your personal data with third parties if you have explicitly consented or if it is necessary to fulfill a contract."
+    },
+    "YOUR_RIGHTS": {
+      "TITLE": "Your Rights",
+      "RIGHTS_LIST": [
+        "to request confirmation as to whether your personal data is being processed and to obtain information about these data (Art. 15 GDPR);",
+        "to request correction of inaccurate personal data or to complete your stored personal data (Art. 16 GDPR);",
+        "to request the deletion of your stored personal data (Art. 17 GDPR), unless legal retention periods prevent this;",
+        "to request restriction of the processing of your personal data (Art. 18 GDPR);",
+        "to receive your personal data in a structured, commonly used, and machine-readable format (Art. 20 GDPR);",
+        "to withdraw your consent at any time (Art. 7 (3) GDPR);",
+        "to lodge a complaint with a supervisory authority (Art. 77 GDPR)."
+      ]
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "CONTENT": "For questions about the collection, processing, or use of your personal data, for information, correction, blocking or deletion of data, as well as for withdrawal of consent or objection to a specific data use, please contact us directly."
+    },
+    "POLICY_CHANGE": {
+      "TITLE": "Changes to the Privacy Policy",
+      "CONTENT": "We reserve the right to adjust this privacy policy at any time to comply with current legal requirements or to reflect changes in our services. The current version is available on this website."
+    }
+  },
+  "LEGAL_NOTICE": {
+    "TITLE": "Legal Notice",
+    "RESPONSIBLE": {
+      "TITLE": "Responsible for the Content according to § 5 TMG",
+      "NAME": "Patrick Offermanns",
+      "ADDRESS": "Ohechaussee 52b, 22848 Norderstedt",
+      "PHONE": "Telefon: +49 (0) 152 33 64 66 14",
+      "EMAIL": "E-Mail: patrick@offermanns.online"
+    },
+    "DISCLAIMER": {
+      "TITLE": "Disclaimer",
+      "CONTENT": "The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness, and timeliness of the contents. As a service provider, we are responsible for our own content on these pages according to § 7 Abs.1 TMG under general law."
+    },
+    "LINKS": {
+      "TITLE": "Liability for Links",
+      "CONTENT": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages."
+    },
+    "COPYRIGHT": {
+      "TITLE": "Copyright",
+      "CONTENT": "The contents and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator."
+    }
+  }
+}

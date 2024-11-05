@@ -1,0 +1,39 @@
+<section class="hero">
+    <div class="hero-container">
+        <div class="developer-container">
+            <div class="iam">
+                {{ 'HERO.IAM' | translate }}
+            </div>
+            <div class="developer-details">
+                <h1 class="developer-name">{{ 'HERO.NAME' | translate }}</h1>
+                <h2 class="developer-title">
+                    {{ 'HERO.TITLE' | translate }}
+                </h2>
+            </div>
+        </div>
+        <div class="developer-container">
+            <button (click)="scrollToElement('contact')" href="javascript:void(0)" class="lets-talk">
+                {{ 'HERO.LETS_TALK' | translate }}
+            </button>
+        </div>
+    </div>
+    <div class="social-work-container">
+        <div class="social-work">
+            <div class="social-icons">
+                <a target="_blank" href="https://github.com/Pao040883"><img
+                        src="./../../../assets/img/github_button.png" alt=""></a>
+                <a href="mailto: patrick@offermanns.online"><img src="./../../../assets/img/email_button.png"
+                        alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/in/patrick-offermanns-2204a7219"><img
+                        src="./../../../assets/img/linkedin_button.png" alt=""></a>
+            </div>
+            <div class="scroll-down">
+                <span>
+                    {{ 'HERO.SCROLL_DOWN' | translate }}
+                </span><img id="About me" src="./../../../assets/img/arrow-down-line.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+

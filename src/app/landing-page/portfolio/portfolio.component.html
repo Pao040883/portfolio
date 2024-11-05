@@ -1,0 +1,28 @@
+<div class="portfolio-container">
+    <div class="portfolio-header">
+        <h2 class="section-header">Portfolio</h2>
+        <p>{{ "PORTFOLIO.TEXT" | translate }}</p>
+    </div>
+
+    <div class="projects">
+        @for (project of projects; track projects; let i = $index;) {
+        <div class="project" (mouseenter)="showOverlay(i)" (mouseleave)="hideOverlay(i)"
+            [style.background-image]="'url(' + project.backgroundImage + ')'">
+
+            @if (isHidden[i]) {
+            <div class="overlay">
+                <div class="overlay-buttons">
+                    <button class="github-overlay">GitHub</button>
+                    <button class="live-test-overlay"><a href="{{ project.live_test }}" target="_blank">Live Test</a></button>
+                </div>
+                <div class="overlay-text">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ ("PORTFOLIO." + project.description) | translate }}</p>
+                    <p class="languages">{{ project.languages }}</p>
+                </div>
+            </div>
+            }
+        </div>
+        }
+    </div>
+</div>

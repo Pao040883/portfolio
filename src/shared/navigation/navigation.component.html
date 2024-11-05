@@ -1,0 +1,13 @@
+<nav>
+    <a (click)="onMenuClick()" [routerLink]="['/']" fragment="aboutme">{{ 'HEADER.ABOUTME' | translate }}</a>
+    <a (click)="onMenuClick()" [routerLink]="['/']" fragment="skills">{{ 'HEADER.SKILLS' | translate }}</a>
+    <a (click)="onMenuClick()" [routerLink]="['/']" fragment="portfolio">{{ 'HEADER.PORTFOLIO' | translate }}</a>
+    <a (click)="onMenuClick()" class="mobile-nav-element" [routerLink]="['/']" fragment="contact">{{ 'HEADER.CONTACT' | translate }}</a>
+    @if(languageService.actualLanguage === 'de'){
+    <a (click)="switchLanguage('en')" href="javascript:void(0)"><img class="flag"
+            src="./../../assets/img/union-jack.png" alt=""></a>
+    } @else {
+    <a (click)="switchLanguage('de')" href="javascript:void(0)"><img class="flag"
+            src="./../../assets/img/germany.png" alt=""></a>
+    }
+</nav>

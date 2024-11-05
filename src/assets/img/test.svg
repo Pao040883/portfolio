@@ -1,0 +1,16 @@
+<svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Text for "Patrick" -->
+  <text x="10" y="50" font-family="Arial" font-size="48" fill="black">
+    Patrick
+
+  </text>
+  
+  <!-- Purple dot above the 'i' -->
+      <circle cx="163" cy="22" r="5" fill="purple" />
+
+
+  <!-- Color groups for customizing the 'k' -->
+  <rect id="k-stem" x="210" y="10" width="5" height="40" fill="black" />
+  <polygon id="k-arm" points="215,30 240,10 245,15 220,35" fill="black" />
+  <polygon id="k-leg" points="215,30 240,50 245,45 220,25" fill="black" />
+</svg>

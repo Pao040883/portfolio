@@ -1,0 +1,43 @@
+<div class="testimonials-container">
+    <div class="slider-container">
+        @for (report of reports; track report) {
+        @if (isActive($index)) {
+        <div class="testimonial active">
+            <div class="testimonial-text">
+                <img class="marks" src="./../../../../assets/img/quotation_marks.png.png" alt="">
+                @if ($index === 0) {
+                <div class="description">
+                    {{ "TESTIMONIALS.SCHUSTER" | translate }}
+                </div>
+                } @else if($index === 1) {
+                <div class="description">
+                    {{ "TESTIMONIALS.EICHINGER" | translate }}
+                </div>
+                } @else {
+                    <div class="description">
+                        {{ "TESTIMONIALS.NUBER" | translate }}
+                    </div>
+                }
+                <div class="name-position">
+                    {{ report.name }} - {{ report.position }}
+                </div>
+            </div>
+            <div class="testimonial-image">
+                <img [src]="report.image" alt="{{ report.name }}">
+            </div>
+        </div>
+        }
+        } @empty {
+        <p>No reports available</p>
+        }
+    </div>
+
+    <!-- Dots zur Navigation -->
+    <div class="dots">
+        <img (click)="prevTestimonial()" src="./../../../../assets/img/left_arrow.png" alt="">
+        @for (report of reports; track report;) {
+        <span [class.active]="isActive($index)" (click)="selectTestimonial($index)"></span>
+        }
+        <img (click)="nextTestimonial()" src="./../../../../assets/img/right_arrow.png" alt="">
+    </div>
+</div>

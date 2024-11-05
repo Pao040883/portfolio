@@ -1,0 +1,41 @@
+<section>
+  <div class="container">
+    <h1>{{ 'PRIVACY_POLICY.TITLE' | translate }}</h1>
+    <p>{{ 'PRIVACY_POLICY.INTRO' | translate }}</p>
+  
+    <h2>{{ 'PRIVACY_POLICY.RESPONSIBLE.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY_POLICY.RESPONSIBLE.CONTENT' | translate }}</p>
+    <p>
+      <strong>{{ 'PRIVACY_POLICY.RESPONSIBLE_PERSON.NAME' | translate }}</strong><br />
+      {{ 'PRIVACY_POLICY.RESPONSIBLE_PERSON.ADDRESS' | translate }}<br />
+      {{ 'PRIVACY_POLICY.RESPONSIBLE_PERSON.PHONE' | translate }}<br />
+      {{ 'PRIVACY_POLICY.RESPONSIBLE_PERSON.EMAIL' | translate }}
+    </p>
+  
+    <h2>{{ 'PRIVACY_POLICY.DATA_COLLECTION.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY_POLICY.DATA_COLLECTION.CONTENT' | translate }}</p>
+  
+    <h2>{{ 'PRIVACY_POLICY.PROCESSING_PURPOSE.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY_POLICY.PROCESSING_PURPOSE.CONTENT' | translate }}</p>
+  
+    <h2>{{ 'PRIVACY_POLICY.LEGAL_BASIS.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY_POLICY.LEGAL_BASIS.CONTENT' | translate }}</p>
+  
+    <h2>{{ 'PRIVACY_POLICY.DATA_SHARING.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY_POLICY.DATA_SHARING.CONTENT' | translate }}</p>
+  
+    <h2>{{ 'PRIVACY_POLICY.YOUR_RIGHTS.TITLE' | translate }}</h2>
+    <ul>
+      @for(right of 'PRIVACY_POLICY.YOUR_RIGHTS.RIGHTS_LIST' | translate; track 'PRIVACY_POLICY.YOUR_RIGHTS.RIGHTS_LIST') {
+        <li>{{ right }}</li>
+      }
+    </ul>
+  
+    <h2>{{ 'PRIVACY_POLICY.CONTACT.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY_POLICY.CONTACT.CONTENT' | translate }}</p>
+  
+    <h2>{{ 'PRIVACY_POLICY.POLICY_CHANGE.TITLE' | translate }}</h2>
+    <p>{{ 'PRIVACY_POLICY.POLICY_CHANGE.CONTENT' | translate }}</p>
+  </div>
+  </section>
+  
