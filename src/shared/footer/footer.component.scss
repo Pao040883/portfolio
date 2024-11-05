@@ -29,8 +29,6 @@ footer {
     font-weight: 400;
     line-height: 19.2px;
     text-align: left;
-    justify-content: center !important;
-    padding-left: 56px;
 
     a {
         position: relative;
@@ -94,6 +92,11 @@ footer {
     .content {
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .legal {
+        justify-content: center !important;
+        padding-left: 56px;
     }
 }
 
