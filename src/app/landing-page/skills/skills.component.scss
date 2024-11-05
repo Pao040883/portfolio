@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    max-width: 1920px;
     color: #fff;
     gap: 32px;
 }
@@ -149,13 +150,11 @@
 
 .scroll-animated-content {
     opacity: 0;
-    transform: translatex(-200px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
   }
   
   .scroll-animated-content.visible {
     opacity: 1;
-    transform: translatex(0);
   }
 
 // Small devices (landscape phones, 576px and up)
@@ -216,8 +215,14 @@
 
     .skill-header {
         p {
-            max-width: 800px;
             padding-right: 50px;
         }
+    }
+}
+
+@media (min-width: 1920px) {
+    .skill-elements {
+        justify-content: flex-start;
+        padding-left: 16px;
     }
 }

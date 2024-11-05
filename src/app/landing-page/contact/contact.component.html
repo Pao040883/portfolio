@@ -1,109 +1,111 @@
-<div class="contact-container">
-    <div class="header">
-        <h2 class="section-header">{{ "CONTACT.HEADER" |translate }}</h2>
-    </div>
-    <div #scrollAnimated class="content scroll-animated-content">
-        <div class="contact-text">
-            <h3>{{ 'CONTACT.SUBHEADER' | translate }}</h3>
-            <p>{{ 'CONTACT.TEXT1' | translate }}</p>
-            <p [innerHTML]="'CONTACT.TEXT2' | translate | safeHtml"></p>
+<div #scrollAnimated class="contact-container scroll-animated-content">
+    <div class="wrapper">
+        <div class="header">
+            <h2 class="section-header">{{ "CONTACT.HEADER" |translate }}</h2>
         </div>
-        <div class="contact-form">
-            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <div class="form-element">
-                    <input [(ngModel)]="contactData.name" type="text" name="name" id="name" required #name="ngModel"
-                        placeholder="{{ 'CONTACT.P-NAME' | translate }}"
-                        [class.invalid]="name.invalid && (name.dirty || name.touched)"
-                        [class.valid]="name.valid && (name.dirty || name.touched)">
+        <div class="content">
+            <div class="contact-text">
+                <h3>{{ 'CONTACT.SUBHEADER' | translate }}</h3>
+                <p>{{ 'CONTACT.TEXT1' | translate }}</p>
+                <p [innerHTML]="'CONTACT.TEXT2' | translate | safeHtml"></p>
+            </div>
+            <div class="contact-form">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                    <div class="form-element">
+                        <input [(ngModel)]="contactData.name" type="text" name="name" id="name" required #name="ngModel"
+                            placeholder="{{ 'CONTACT.P-NAME' | translate }}"
+                            [class.invalid]="name.invalid && (name.dirty || name.touched)"
+                            [class.valid]="name.valid && (name.dirty || name.touched)">
 
-                    @if(name.dirty || name.touched) {
-                    <ng-container>
-                        @if (name.invalid) {
-                        <img class="error-symbol" src="./../../../assets/img/error-symbol.png" alt="">
+                        @if(name.dirty || name.touched) {
+                        <ng-container>
+                            @if (name.invalid) {
+                            <img class="error-symbol" src="./../../../assets/img/error-symbol.png" alt="">
+                            }
+                            @if (name.valid) {
+                            <img class="error-symbol" src="./../../../assets/img/okay-symbol.png" alt="">
+                            }
+                        </ng-container>
                         }
-                        @if (name.valid) {
-                        <img class="error-symbol" src="./../../../assets/img/okay-symbol.png" alt="">
-                        }
-                    </ng-container>
-                    }
 
-                    <div class="error">
-                        @if(name.invalid && (name.dirty || name.touched)) {
-                        <span>{{ 'CONTACT.E-NAME' | translate }}</span>
-                        }
+                        <div class="error">
+                            @if(name.invalid && (name.dirty || name.touched)) {
+                            <span>{{ 'CONTACT.E-NAME' | translate }}</span>
+                            }
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-element">
-                    <input [(ngModel)]="contactData.email" type="email" name="email" id="email" required
-                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #email="ngModel"
-                        placeholder="{{ 'CONTACT.P-EMAIL' | translate }}"
-                        [class.invalid]="email.invalid && (email.dirty || email.touched)"
-                        [class.valid]="email.valid && (email.dirty || email.touched)">
+                    <div class="form-element">
+                        <input [(ngModel)]="contactData.email" type="email" name="email" id="email" required
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #email="ngModel"
+                            placeholder="{{ 'CONTACT.P-EMAIL' | translate }}"
+                            [class.invalid]="email.invalid && (email.dirty || email.touched)"
+                            [class.valid]="email.valid && (email.dirty || email.touched)">
 
-                    @if(email.dirty || email.touched) {
-                    <ng-container>
-                        @if (email.invalid) {
-                        <img class="error-symbol" src="./../../../assets/img/error-symbol.png" alt="">
+                        @if(email.dirty || email.touched) {
+                        <ng-container>
+                            @if (email.invalid) {
+                            <img class="error-symbol" src="./../../../assets/img/error-symbol.png" alt="">
+                            }
+                            @if (email.valid) {
+                            <img class="error-symbol" src="./../../../assets/img/okay-symbol.png" alt="">
+                            }
+                        </ng-container>
                         }
-                        @if (email.valid) {
-                        <img class="error-symbol" src="./../../../assets/img/okay-symbol.png" alt="">
-                        }
-                    </ng-container>
-                    }
 
-                    <div class="error">
-                        @if(email.invalid && (email.dirty || email.touched)) {
-                        <span>{{ 'CONTACT.E-EMAIL' | translate }}</span>
-                        }
+                        <div class="error">
+                            @if(email.invalid && (email.dirty || email.touched)) {
+                            <span>{{ 'CONTACT.E-EMAIL' | translate }}</span>
+                            }
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-element">
-                    <textarea [(ngModel)]="contactData.message" name="message" id="message" required #message="ngModel"
-                        placeholder="{{ 'CONTACT.P-MESSAGE' | translate }}"
-                        [class.invalid]="message.invalid && (message.dirty || message.touched)"
-                        [class.valid]="message.valid && (message.dirty || message.touched)">
+                    <div class="form-element">
+                        <textarea [(ngModel)]="contactData.message" name="message" id="message" required
+                            #message="ngModel" placeholder="{{ 'CONTACT.P-MESSAGE' | translate }}"
+                            [class.invalid]="message.invalid && (message.dirty || message.touched)"
+                            [class.valid]="message.valid && (message.dirty || message.touched)">
                     </textarea>
 
-                    @if(message.dirty || message.touched) {
-                    <ng-container>
-                        @if (message.invalid) {
-                        <img class="error-symbol" src="./../../../assets/img/error-symbol.png" alt="">
+                        @if(message.dirty || message.touched) {
+                        <ng-container>
+                            @if (message.invalid) {
+                            <img class="error-symbol" src="./../../../assets/img/error-symbol.png" alt="">
+                            }
+                            @if (message.valid) {
+                            <img class="error-symbol" src="./../../../assets/img/okay-symbol.png" alt="">
+                            }
+                        </ng-container>
                         }
-                        @if (message.valid) {
-                        <img class="error-symbol" src="./../../../assets/img/okay-symbol.png" alt="">
-                        }
-                    </ng-container>
-                    }
 
-                    <div class="error">
-                        @if(message.invalid && (message.dirty || message.touched)) {
-                        <span>{{ 'CONTACT.E-MESSAGE' | translate }}</span>
-                        }
+                        <div class="error">
+                            @if(message.invalid && (message.dirty || message.touched)) {
+                            <span>{{ 'CONTACT.E-MESSAGE' | translate }}</span>
+                            }
+                        </div>
                     </div>
-                </div>
-                <div class="form-element">
-                    <label class="checkbox">
-                        <input type="checkbox" [(ngModel)]="contactData.termsAccepted" name="termsAccepted"
-                            id="termsAccepted" required #termsAccepted="ngModel"
-                            [class.invalid]="termsAccepted.invalid && (termsAccepted.dirty || termsAccepted.touched)"
-                            [class.valid]="termsAccepted.valid && (termsAccepted.dirty || termsAccepted.touched)">
-                        <span [innerHTML]="'CONTACT.P-TERMS' | translate | safeHtml"></span>
-                    </label>
+                    <div class="form-element">
+                        <label class="checkbox">
+                            <input type="checkbox" [(ngModel)]="contactData.termsAccepted" name="termsAccepted"
+                                id="termsAccepted" required #termsAccepted="ngModel"
+                                [class.invalid]="termsAccepted.invalid && (termsAccepted.dirty || termsAccepted.touched)"
+                                [class.valid]="termsAccepted.valid && (termsAccepted.dirty || termsAccepted.touched)">
+                            <span [innerHTML]="'CONTACT.P-TERMS' | translate | safeHtml"></span>
+                        </label>
 
-                    <div class="error">
-                        @if(termsAccepted.invalid && (termsAccepted.dirty || termsAccepted.touched)) {
-                        <span>{{ 'CONTACT.E-TERMS' | translate}}</span>
-                        }
+                        <div class="error">
+                            @if(termsAccepted.invalid && (termsAccepted.dirty || termsAccepted.touched)) {
+                            <span>{{ 'CONTACT.E-TERMS' | translate}}</span>
+                            }
+                        </div>
                     </div>
-                </div>
 
-                <button type="submit" [class.disabled-button]="!contactForm.form.valid"
-                    [class.button]="contactForm.form.valid">
-                    {{ 'CONTACT.BUTTON' | translate }}
-                </button>
-            </form>
+                    <button type="submit" [class.disabled-button]="!contactForm.form.valid"
+                        [class.button]="contactForm.form.valid">
+                        {{ 'CONTACT.BUTTON' | translate }}
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

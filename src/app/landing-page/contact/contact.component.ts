@@ -58,12 +58,11 @@ export class ContactComponent implements AfterViewInit {
         .subscribe({
           next: (response) => {
             this.showModal = true;
-            ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => ngForm.resetForm(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log(this.contactData);

@@ -2,12 +2,22 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1;
     gap: 32px;
     background:
         url(./../../../assets/img/green_shadow_portfolio.png) no-repeat left bottom / 490px 550px,
         url(./../../../assets/img/blue_shadow_portfolio.png) no-repeat right top / 341px 550px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
 }
 
 .portfolio-header {
@@ -176,14 +186,12 @@
 
 .scroll-animated-content {
     opacity: 0;
-    transform: translatex(200px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  }
-  
-  .scroll-animated-content.visible {
+    transition: opacity 0.5s ease-out;
+}
+
+.scroll-animated-content.visible {
     opacity: 1;
-    transform: translatex(0);
-  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -259,5 +267,12 @@
                 line-height: 27.6px;
             }
         }
+    }
+}
+
+@media (min-width: 1920px) {
+    .projects {
+        justify-content: space-between;
+        padding: 0 64px;
     }
 }

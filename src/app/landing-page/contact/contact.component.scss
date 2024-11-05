@@ -7,7 +7,8 @@
     width: 100%;
     color: #fff;
     background:
-    url(./../../../assets/img/purple_shadow_contact.png) no-repeat right center/1000px 550px;
+        url(./../../../assets/img/purple_shadow_contact.png) no-repeat right center/1000px 550px;
+    padding: 64px 0;
 
     .header {
         display: flex;
@@ -205,6 +206,7 @@ textarea.valid {
 
         a {
             text-decoration: none;
+
             &:hover {
                 text-decoration: underline !important;
             }
@@ -306,7 +308,8 @@ button {
 }
 
 .modal {
-    display: block; /* Hidden by default */
+    display: block;
+    /* Hidden by default */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -314,10 +317,11 @@ button {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  }
-  
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+}
+
+.modal-content {
     position: absolute;
     background-color: #fff;
     left: 50%;
@@ -328,32 +332,30 @@ button {
     width: 80%;
     max-width: 400px;
     border-radius: 8px;
-  }
-  
-  .close {
+}
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .scroll-animated-content {
+}
+
+.scroll-animated-content {
     opacity: 0;
-    transform: translatex(200px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  }
-  
-  .scroll-animated-content.visible {
+    transition: opacity 0.5s ease-out;
+}
+
+.scroll-animated-content.visible {
     opacity: 1;
-    transform: translatex(0);
-  }
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -482,6 +484,28 @@ button {
                     transform: translateY(-50%);
                     z-index: -1;
                     overflow: hidden;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 1920px) {
+    .contact-container {
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            max-width: 1920px;
+            gap: 64px;
+
+            .header {
+
+                h2 {   
+                    &::before {
+                        width: 19vw;
+                    }
                 }
             }
         }

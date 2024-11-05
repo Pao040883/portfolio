@@ -124,13 +124,11 @@
 
 .scroll-animated-content {
     opacity: 0;
-    transform: translatex(-200px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
   }
   
   .scroll-animated-content.visible {
     opacity: 1;
-    transform: translatex(0);
   }
 
 // Small devices (landscape phones, 576px and up)
@@ -185,7 +183,7 @@
     .testimonial {
 
         width: 80%;
-
+        max-width: 1920px;
         align-items: center;
         justify-content: center;
 
@@ -193,6 +191,34 @@
             img {
                 width: 224px;
                 height: 224px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) { 
+    .testimonial {
+        flex-direction: row;
+        min-height: 500px;
+
+        .testimonial-text {
+            width: 50%;
+            margin-left: 48px;
+
+            .marks {
+                display: flex;
+                width: 40px;
+                position: absolute;
+                top: -12px;
+                left: -12px;
+            }
+        }
+
+        .testimonial-image {
+            &::after {
+                width: 10%;
+                right: auto;
+                left: 1920px;
             }
         }
     }
