@@ -5,6 +5,7 @@ import { LanguageService } from '../../../shared/services/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Pipe, PipeTransform } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Pipe({ name: 'safeHtml', standalone: true })
 export class SafeHtmlPipe implements PipeTransform {
@@ -34,7 +35,7 @@ export class ContactComponent implements AfterViewInit {
     termsAccepted: false
   };
 
-  constructor(public languageService: LanguageService) {
+  constructor(public languageService: LanguageService, private viewportScroller: ViewportScroller) {
   }
 
   mailTest = false;
@@ -65,7 +66,6 @@ export class ContactComponent implements AfterViewInit {
           complete: () => ngForm.resetForm(),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log(this.contactData);
       this.showModal = true;
       ngForm.resetForm();
     }
@@ -99,11 +99,14 @@ export class ContactComponent implements AfterViewInit {
           (entry.target as HTMLElement).classList.remove('visible');
         }
       });
-    }, { threshold: 0.1 }); // Optionaler Threshold für präziseres Verhalten
+    }, { threshold: 0.1 }); 
 
     this.animatedElements.forEach(element => {
       observer.observe(element.nativeElement);
     });
   }
 
+  goToTop() {
+    this.viewportScroller.scrollToPosition([0, 0]);
+  }
 }

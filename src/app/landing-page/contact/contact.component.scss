@@ -9,6 +9,7 @@
     background:
         url(./../../../assets/img/purple_shadow_contact.png) no-repeat right center/1000px 550px;
     padding: 64px 0;
+    position: relative;
 
     .header {
         display: flex;
@@ -355,6 +356,16 @@ button {
 
 .scroll-animated-content.visible {
     opacity: 1;
+}
+
+.goToTop {
+    position: absolute;
+    right: 50px;
+    bottom: -30px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 // Small devices (landscape phones, 576px and up)

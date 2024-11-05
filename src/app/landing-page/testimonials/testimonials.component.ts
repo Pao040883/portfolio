@@ -30,7 +30,7 @@ export class TestimonialsComponent implements AfterViewInit {
   }
 
   ngOnInit() {
-    // this.startAutoSwitch();
+    this.startAutoSwitch();
   }
 
   ngOnDestroy() {

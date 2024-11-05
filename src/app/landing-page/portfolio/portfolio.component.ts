@@ -41,7 +41,7 @@ export class PortfolioComponent implements AfterViewInit {
           (entry.target as HTMLElement).classList.remove('visible');
         }
       });
-    }, { threshold: 0.1 }); // Optionaler Threshold für präziseres Verhalten
+    }, { threshold: 0.1 }); 
 
     this.animatedElements.forEach(element => {
       observer.observe(element.nativeElement);
