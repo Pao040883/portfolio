@@ -76,6 +76,6 @@ ul {
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
     section {
-        height: calc(100% - 356px);
+        min-height: calc(100% - 356px);
     }
 }
