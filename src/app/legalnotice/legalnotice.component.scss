@@ -1,6 +1,5 @@
 section {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #fff;
@@ -9,7 +8,6 @@ section {
 
 .container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 80%;
     padding-top: 150px;
@@ -42,7 +40,6 @@ section {
 @media (min-width: 992px) {
     .container {
         max-width: 1920px;
-        min-height: calc(100vh - 109px - 291px);
 
         h1 {
             font-size: 48px;
@@ -65,4 +62,9 @@ section {
 @media (min-width: 1200px) {}
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+    section {
+        height: calc(100% - 356px);
+        padding-top: 120px;
+    }
+}

@@ -87,11 +87,19 @@ footer {
     footer {
         height: 291px;
         justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1920px;
     }
 
     .content {
+        width: 100%;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .legal {

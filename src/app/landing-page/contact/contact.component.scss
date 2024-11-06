@@ -79,6 +79,7 @@
 
 .contact-form {
     width: 100%;
+    position: relative;
 }
 
 form {
@@ -360,8 +361,9 @@ button {
 
 .goToTop {
     position: absolute;
-    right: 50px;
-    bottom: -30px;
+    right: 30px;
+    bottom: -100px;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.05);
